@@ -1,6 +1,6 @@
-function fadeOut() {
-  document.querySelector("div.circle").classList.add("fade-out");
-}
+// function fadeOut() {
+//   document.querySelector("div.circle").classList.add("fade-out");
+// }
 
 
 
@@ -70,8 +70,8 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      // slides[i].style.display = "none"; 
-      slides[i].classList.add("fade-out"); 
+      slides[i].style.display = "none"; 
+      // slides[i].classList.add("fade-out"); 
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");

@@ -133,10 +133,10 @@ body {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 70%;
+  top: 95%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 0px 50px 0px 50px;
   color: black;
   font-weight: bold;
   font-size: 50px;
@@ -148,7 +148,7 @@ body {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 16px 0 0 16px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -172,4 +172,66 @@ body {
 .active,
 .dot:hover {
   background-color: #717171;
+}
+
+@media (max-width: 768px) {
+  img.logo {
+    padding: 10px;
+    width: 200px;
+  }
+
+  h2 {
+    font-size: 30px;
+    width: 375px;
+    margin-left: 0%;
+  }
+
+  h3 {
+    font-size: 20px;
+    width: 375px;
+    margin-left: 0%;
+  }
+
+  p.description {
+    width: 375px;
+    margin: auto;
+  }
+
+  button.myBtn {
+    margin-left: 137px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 100px;
+  }
+
+  .next {
+    right: 10%;
+    top: 87%;
+    margin-right: 20px;
+  }
+
+  .prev {
+    right: 50%;
+    top: 87%;
+  }
+
+  div.circle {
+    margin: 12%;
+  }
+
+  .dots {
+    align-items: center;
+  }
+
+  div.circle {
+    width: 320px;
+    height: 600px;
+    border-radius: 0px;
+    margin: auto;
+    margin-top: 150px;
+  }
+  p {
+    width: 300px;
+    font-size: 15px;
+  }
 }
