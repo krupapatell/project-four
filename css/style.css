@@ -29,6 +29,7 @@ button.myBtn {
   color: white;
   border: none;
   padding: 10px;
+  border-radius: 10px;
 }
 
 h1 {
@@ -50,6 +51,9 @@ h2.title {
   border: none;
   margin: 0px;
   margin-top: 0px;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
 }
 
 h2 {
@@ -75,7 +79,8 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   font-size: 20px;
   line-height: 25px;
   text-align: center;
@@ -85,17 +90,13 @@ p {
 p.modaltext {
   color: black;
   width: 90%;
+  max-width: 90%;
 }
 
 p.description {
   color: black;
-  width: 1000px;
-}
-
-img.logo {
-  width: 300px;
-  padding: 0%;
-  margin: 0%;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .stat {
@@ -113,7 +114,8 @@ body {
 }
 
 .flourish-embed {
-  width: 75%;
+  width: 100%;
+  max-width: 700px;
   align-items: center;
   margin: auto;
 }
@@ -129,17 +131,18 @@ body {
   height: 100%; /* Full height */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  margin-right: 30%;
+  margin: 0 auto;
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin-top: 15%;
-  margin-left: 7.5%;
+  margin: 0 auto;
+  margin-top: 20%;
   padding: 20px;
   border: 1px solid #888;
-  width: 70%; /* Could be more or less, depending on screen size */
+  width: 100%;
+  max-width: 70%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -167,16 +170,15 @@ body {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 100%;
-  width: 100%;
-  max-width: 120px;
-  margin: auto;
-  padding: 0px 100px 0px 150px;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 0px 50px 0px 50px;
   color: black;
   font-weight: bold;
   font-size: 50px;
   transition: 0.6s ease;
-  border-radius: 0 16px 16px 0;
+  border-radius: 16px;
   user-select: none;
 }
 
@@ -245,19 +247,15 @@ body {
   }
 
   .next {
-    margin: auto;
-    position: absolute;
     bottom: 0px;
+    top: 50%;
     color: black;
-    padding: 0px;
   }
 
   .prev {
-    margin: auto;
-    position: absolute;
     bottom: 0px;
+    top: 50%;
     color: black;
-    padding: 0px;
   }
 
   div.circle {
@@ -270,7 +268,8 @@ body {
 
   div.circle {
     width: 100%;
-    height: 600px;
+    height: auto;
+    padding-bottom: 150px;
     border-radius: 0px;
     margin: auto;
     margin-top: 150px;
@@ -284,5 +283,9 @@ body {
 
   .flourish-embed {
     width: 100%;
+  }
+  .slideshow {
+    position: relative;
+    margin: auto;
   }
 }
