@@ -1,3 +1,8 @@
+.slideshow {
+  position: relative;
+  margin: auto;
+}
+
 div.circle {
   width: 700px;
   height: 700px;
@@ -110,7 +115,19 @@ p.description {
 }
 
 body {
-  margin: 20px auto 0 auto;
+  margin: 0px auto 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+footer > p {
+  margin: 0px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.portfolio {
+  color: white;
 }
 
 .flourish-embed {
@@ -218,7 +235,7 @@ body {
     width: 100%;
     max-width: 768px;
     padding-bottom: 150px;
-    padding-top: 50px;
+    padding-top: 150px;
     top: 0px;
   }
 
@@ -247,15 +264,15 @@ body {
   }
 
   .next {
-    bottom: 0px;
-    top: 50%;
-    color: black;
+    bottom: 20px;
+    top: unset;
+    color: white;
   }
 
   .prev {
-    bottom: 0px;
-    top: 50%;
-    color: black;
+    bottom: 20px;
+    top: unset;
+    color: white;
   }
 
   div.circle {
@@ -269,7 +286,7 @@ body {
   div.circle {
     width: 100%;
     height: auto;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     border-radius: 0px;
     margin: auto;
     margin-top: 150px;
@@ -283,9 +300,5 @@ body {
 
   .flourish-embed {
     width: 100%;
-  }
-  .slideshow {
-    position: relative;
-    margin: auto;
   }
 }
